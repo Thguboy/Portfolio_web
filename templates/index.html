@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidaxmatov Saidaziz — Portfolio</title>
+    <meta name="description" content="Saidaxmatov Saidaziz — Python, Flask, Django va Frontend/Backend dasturchi portfolio sayti.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="logo">&lt;SS /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#about">Men haqimda</a></li>
+                <li><a href="#skills">Ko'nikmalar</a></li>
+                <li><a href="#projects">Loyihalar</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menyu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <p class="hero-greeting">Salom, men</p>
+            <h1 class="hero-name">Saidaxmatov <span class="highlight">Saidaziz</span></h1>
+            <p class="hero-role">Frontend & Backend Dasturchi</p>
+            <p class="hero-desc">
+                Python, Django va Flask bilan zamonaviy web ilovalar yarataman.
+                Quyida mening amaliy loyihalarim bilan tanishing.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Loyihalarim</a>
+                <a href="#contact" class="btn btn-outline">Bog'lanish</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">5+</span>
+                    <span class="stat-label">Loyihalar</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">3+</span>
+                    <span class="stat-label">Texnologiyalar</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Passion</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Pastga</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">Men haqimda</h2>
+            <p class="section-subtitle">Kimman va nima qilaman</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">👨‍💻</div>
+                    <h3>Dasturchi</h3>
+                    <p>
+                        Men Saidaxmatov Saidazizman. Frontend va Backend yo'nalishlarida ishlayman.
+                        Foydalanuvchilar uchun qulay va chiroyli web saytlar yaratish — mening asosiy maqsadim.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">⚙️</div>
+                    <h3>Texnologiyalar</h3>
+                    <p>
+                        Python, Django, Flask, HTML, CSS va JavaScript bilan ishlayman.
+                        Restoran saytlaridan tortib kiberxavfsizlik platformalarigacha turli loyihalar qilganman.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>Maqsad</h3>
+                    <p>
+                        Har bir loyihada yangi narsa o'rganaman va kod sifatini doim yaxshilayman.
+                        Real loyihalar orqali tajribamni oshirishda davom etaman.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <h2 class="section-title">Ko'nikmalar</h2>
+            <p class="section-subtitle">Biladigan texnologiyalarim</p>
+            <div class="skills-grid">
+                {% for skill in skills %}
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">{{ skill.name }}</span>
+                        <span class="skill-percent">{{ skill.level }}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="{{ skill.level }}"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Frontend</span>
+                <span class="tech-tag">Backend</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Loyihalarim</h2>
+            <p class="section-subtitle">Amalda qilgan web loyihalar</p>
+            <div class="projects-grid">
+                {% for project in projects %}
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">{{ project.icon }}</span>
+                        <span class="project-tag">{{ project.tag }}</span>
+                    </div>
+                    <h3 class="project-title">{{ project.title }}</h3>
+                    <p class="project-desc">{{ project.description }}</p>
+                    <div class="project-tech">
+                        {% for tech in project.tech %}
+                        <span class="tech-badge">{{ tech }}</span>
+                        {% endfor %}
+                    </div>
+                    <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Saytni ko'rish
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <h2 class="section-title">Aloqa</h2>
+            <p class="section-subtitle">Birgalikda ishlaymizmi?</p>
+            <div class="contact-box">
+                <p class="contact-text">
+                    Loyiha yoki hamkorlik bo'yicha murojaat qilishingiz mumkin.
+                    Men har doim yangi g'oyalar va qiziqarli loyihalar uchun ochiqman.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:saidaziz@example.com" class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>Email orqali yozing</span>
+                    </a>
+                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <span class="contact-icon">💬</span>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Saidaxmatov Saidaziz. Barcha huquqlar himoyalangan.</p>
+            <p class="footer-tech">Flask bilan yaratilgan</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
