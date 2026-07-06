@@ -47,12 +47,12 @@ def index():
             "tag": "E-commerce",
         },
         {
-            "title": "SmartRealEstate",
-            "description": "Toshkent uchun geo-texnologiyali ko'chmas mulk platformasi. Xarita, filtrlar va uy-joy qidiruv.",
-            "url": "https://smart-real-estate-geo-tra-195.created.app/",
-            "tech": ["React", "JavaScript", "Maps API", "CSS"],
-            "icon": "🏠",
-            "tag": "Real Estate",
+            "title": "TreydSim",
+            "description": "Virtual balans bilan treyding o'rganish platformasi. AI yordamchi va real vaqtli grafiklar.",
+            "url": "https://ascend-trade-bot.lovable.app",
+            "tech": ["React", "TypeScript", "Tailwind CSS", "AI"],
+            "icon": "📈",
+            "tag": "Fintech",
         },
         {
             "title": "NexLMS AI",
