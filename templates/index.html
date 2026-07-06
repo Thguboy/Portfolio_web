@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saidaxmatov Saidaziz — Portfolio</title>
-    <meta name="description" content="Saidaxmatov Saidaziz — Python, Flask, Django va Frontend/Backend dasturchi portfolio sayti.">
+    <meta name="description"
+        content="Saidaxmatov Saidaziz — Python, Flask, Django va Frontend/Backend dasturchi portfolio sayti.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
+
 <body>
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
@@ -147,10 +153,11 @@
                     </div>
                     <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="project-link">
                         Saytni ko'rish
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
@@ -169,15 +176,15 @@
                     Men har doim yangi g'oyalar va qiziqarli loyihalar uchun ochiqman.
                 </p>
                 <div class="contact-links">
-                    <a href="mailto:saidaziz@example.com" class="contact-item">
+                    <a href="thugboysaidaziz@gmail.com" class="contact-item">
                         <span class="contact-icon">📧</span>
                         <span>Email orqali yozing</span>
                     </a>
-                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <a href="https://t.me/KYLO7088" target="_blank" rel="noopener noreferrer" class="contact-item">
                         <span class="contact-icon">💬</span>
                         <span>Telegram</span>
                     </a>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <a href="https://github.com/Thguboy" target="_blank" rel="noopener noreferrer" class="contact-item">
                         <span class="contact-icon">🐙</span>
                         <span>GitHub</span>
                     </a>
@@ -195,4 +202,5 @@
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
+
 </html>
