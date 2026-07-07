@@ -86,6 +86,14 @@ def index():
             "icon": "📋",
             "tag": "Productivity",
         },
+        {
+            "title": "MARS SPACE",
+            "description": "Ta'lim uchun zamonaviy va interaktiv web platforma. AI assistant bilan hamkorlik.",
+            "url": "https://mars1web.pythonanywhere.com/",
+            "tech": ["Flask", "Python", "HTML", "CSS"],
+            "icon": "🚀",
+            "tag": "Ta'lim",
+        },
     ]
 
     skills = [
