@@ -94,6 +94,14 @@ def index():
             "icon": "🚀",
             "tag": "Ta'lim",
         },
+        {
+            "title": "Telegram bot",
+            "description": "Instagram uchun post va reels tayyorlash uchun bot",
+            "url": "https://t.me/InstaS_A_bot",
+            "tech": ["Python"],
+            "icon": "🤖",
+            "tag": "Bot",
+        },
     ]
 
     skills = [
