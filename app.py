@@ -33,7 +33,7 @@ def index():
         {
             "title": "Sefr",
             "description": "Kitoblar va o'quv materiallari uchun zamonaviy web platforma.",
-            "url": "https://sefr-s1n0.onrender.com/",
+            "url": "https://ielts-cefr-skill-bui-e4vu.bolt.host",
             "tech": ["Flask", "Python", "HTML", "CSS"],
             "icon": "📚",
             "tag": "Platforma",
