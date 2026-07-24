@@ -39,6 +39,14 @@ def index():
             "tag": "Ta'lim",
         },
         {
+            "title": "CEFR Pro Reading",
+            "description": "CEFR va IELTS darajalari uchun interaktiv Reading & Mock Test platformasi. Interaktiv testlar va avtomatik baholash.",
+            "url": "https://sefrtest1.pythonanywhere.com/reading/4",
+            "tech": ["Flask", "Python", "HTML", "CSS", "JavaScript"],
+            "icon": "📚",
+            "tag": "Ta'lim",
+        },
+        {
             "title": "Online Shop",
             "description": "To'liq funksional onlayn do'kon. Mahsulotlar katalogi va buyurtma berish tizimi.",
             "url": "https://online-shop-lux9.onrender.com/",
