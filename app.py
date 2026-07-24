@@ -31,12 +31,12 @@ def index():
             "tag": "Vosita",
         },
         {
-            "title": "Sefr",
-            "description": "Kitoblar va o'quv materiallari uchun zamonaviy web platforma.",
-            "url": "https://ielts-cefr-skill-bui-e4vu.bolt.host",
-            "tech": ["Flask", "Python", "HTML", "CSS"],
-            "icon": "📚",
-            "tag": "Platforma",
+            "title": "IELTS & CEFR Skill Builder",
+            "description": "IELTS va CEFR imtihonlariga tayyorgarlik ko'rish uchun interaktiv ko'nikma oshirish platformasi.",
+            "url": "https://ielts-cefr-skill-bui-e4vu.bolt.host/",
+            "tech": ["React", "TypeScript", "Tailwind CSS", "AI"],
+            "icon": "🎯",
+            "tag": "Ta'lim",
         },
         {
             "title": "Online Shop",
