@@ -32,10 +32,10 @@ def index():
         },
         {
             "title": "IELTS & CEFR Skill Builder",
-            "description": "IELTS va CEFR imtihonlariga tayyorgarlik ko'rish uchun interaktiv ko'nikma oshirish platformasi.",
+            "description": "IELTS va CEFR imtihonlariga tayyorlanish uchun interaktiv platforma va mock testlar.",
             "url": "https://ielts-cefr-skill-bui-e4vu.bolt.host/",
             "tech": ["React", "TypeScript", "Tailwind CSS", "AI"],
-            "icon": "🎯",
+            "icon": "🎓",
             "tag": "Ta'lim",
         },
         {
